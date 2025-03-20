@@ -1,0 +1,45 @@
+.main__wrapper{
+    flex-direction: column;
+}
+.main__content{
+position: relative;
+
+}
+
+.main__title{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 125px;
+}
+.main__title--many{
+    position:absolute;
+    top: 5vh;
+    left: 4vw;
+}
+.main__title--ducks{
+    position:absolute;
+    top: 15vh;
+    right: 4vw;
+}
+
+
+.main__img{
+    position:absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.main__img--duckSound{
+    position:absolute;
+    top: 30vh;  
+    left: 0vw;
+    transform: translateX(-50%);
+}
+.main__subtitle{
+    position:absolute;
+    top: 35vh;
+    right: 7vw;
+    width: 27vw;
+}

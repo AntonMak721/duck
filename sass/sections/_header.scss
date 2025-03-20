@@ -1,0 +1,41 @@
+.header__wrapper {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+// .header__wrapper > * {
+//   width: fit-content;
+// }
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+  text-decoration: none;
+  width: fit-content;
+  transition: 0.2s ease; 
+ & >* {
+  height: 100%;
+ }
+}
+
+.header__navigation--buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  align-items: center;
+}
+
+
+.header__navigation--link:hover {
+    color: $secondaryButtonColor;
+  
+}
+
+.activeNavLink{
+  color: blue !important;
+  text-decoration: underline;
+  border-bottom: 2px solid blue;
+}

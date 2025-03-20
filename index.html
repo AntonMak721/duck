@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckShop</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
+    <header class="header__wrapper" >
+            <img src="./ui/components/Logo.png" alt="logo">
+            <nav class="header__navigation">
+                    <a class="header__navigation--link activeNavLink" href="#">Главная</a>
+                    <a class="header__navigation--link" href="#">Категории</a>
+                    <!-- <label for="category-select">Категории</label> -->
+                    <!-- <select name="category" id="category-select">
+                        <option value=""></option>
+                        <option value="classic">Классические</option>
+                        <option value="panks">Уточки панки</option>
+                        <option value="hero">Супергеройские</option>
+                        <option value="cute">Милые</option>
+                        <option value="forKids">Для детей</option>
+                        <option value="adults">Взрослым</option>
+                    </select> -->
+                    <img class="header__navigation--link" src="./ui/components/Vector.png" alt="arrowDown">
+                    <a class="header__navigation--link" href="#">Блог</a>
+                    <a class="header__navigation--link" href="#">Отзывы</a>
+                    <a class="header__navigation--link" href="#">Контакты</a>
+               
+            </nav>
+            <div class="header__navigation--buttons">
+                <img src="./ui/components/shopping-basket.png" alt="">
+                <button class="button button__primary">Заказать обратный звонок</button>
+            </div>
+    </header>
+    <main class="main__wrapper">
+        <section class="main__content">
+
+            <div class="main__title">
+                <h2 class="main__title--many">много</h2>
+                <h2 class="main__title--ducks">уточек</h2>
+            </div>
+            
+
+            <div class="main__img">
+                <img class="main__img--duck" src="./ui/img/mainImg.png" alt="mainDuck">
+                <img class="main__img--duckSound"src="./ui/img/duckSound.png" alt="duckSound">  
+            </div>
+            <div class="main__subtitle">
+                <p>Маленький друг найдётся для каждого в этом кряквенно жёлтом мире</p>
+                <button class="button button__secondary">Смотреть уточек</button>
+            </div>
+            
+        </section>
+        <section class="category__wrapper ">
+            <div class="category__list ">
+                <div class="category__list--item">
+                    <div class="category__list--img"></div>
+
+                    <!-- <img src="./ui/components/shape.png" alt="arrow"> -->
+                    <p>Классические</p>
+                </div>
+                <div class="category__list--item">
+                    <div class="category__list--img"></div>
+
+                    <!-- <img src="./ui/components/shape.png" alt="arrow"> -->
+                    <p>Уточки панки</p>
+                </div>
+                <div class="category__list--item">
+                    <div class="category__list--img"></div>
+                    <!-- <img src="./ui/components/shape.png" alt="arrow"> -->
+                    <p>Супергеройские</p>
+                </div>
+                <div class="category__list--item">
+                    <div class="category__list--img"></div>
+
+                    <!-- <img src="./ui/components/shape.png" alt="arrow"> -->
+                    <p>Милые</p>
+                </div>
+                <div class="category__list--item">
+                    <div class="category__list--img"></div>
+
+                    <!-- <img src="./ui/components/shape.png" alt="arrow"> -->
+                    <p>Для детей</p>
+                </div>
+                <div class="category__list--item">
+                    <div class="category__list--img"></div>
+
+                    <!-- <img src="./ui/components/shape.png" alt="arrow"> -->
+                    <p>Взрослым</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+
+    <div class="popup__wrapper">
+        <form class="popup__form" action="">
+            <label for="name">Имя *</label>
+            <input type="text" name="name" placeholder="Имя" required >
+            <label for="phone">Телефон *</label>
+            <input type="text" name="phone" placeholder="+7 000 000 00 00" required >
+            <button class="button button__primary button__popup" type="submit">Отправить</button>
+        </form>
+        <p>Нажимая кнопку “Отправить”, вы соглашаетесь с <a class="popup__link" href="#">политикой конфиденциальности</a> и <a class="popup__link" href="#">договором оферты</a></p>
+        <img id="popup__close" src="./ui/components/close.png" alt="close">
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

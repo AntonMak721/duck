@@ -1,0 +1,30 @@
+.button {
+  padding: 7px;
+  text-align: center;
+  color: #ffffff;
+  border: none !important;
+  border-radius: 5px;
+  transition:  0.2s ease; 
+}
+
+.button__primary {
+  background-color: $primaryButtonColor;
+
+  &:hover { 
+    background-color: $primaryButtonColorHover;
+  }
+  &:active {
+    background-color: $primaryButtonColorPressed;
+  }
+}
+
+.button__secondary {
+  background-color: $secondaryButtonColor;
+
+  &:hover {
+    background-color: $secondaryButtonColorHover;
+  }
+  &:active {
+    background-color: $secondaryButtonColorPressed;
+  }
+}

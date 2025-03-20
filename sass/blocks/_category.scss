@@ -1,0 +1,48 @@
+
+.category__wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+}
+
+
+.category__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.category__list--item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    
+    p {
+        white-space: nowrap;
+    }
+}
+
+.category__list--item:hover{
+    color: $secondaryButtonColorHover;
+    transition: background-image 0.2s ease; 
+    .category__list--img{
+        background-image: url('./../../ui/components/shapeBlue.png');
+    }
+}
+
+.category__list--img{
+    width: 14px;
+    height: 12px;
+    background-image: url('./../../ui/components/shape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: 0;
+    transition: background-image 0.2s ease; 
+    
+}
+// .category__list--img{
+//     background-image: url('./../../ui/components/shapeBlue.png');
+// }
