@@ -7,7 +7,14 @@
 // .header__wrapper > * {
 //   width: fit-content;
 // }
+
+
 .header__navigation {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,10 +22,8 @@
   gap: 2vw;
   text-decoration: none;
   width: fit-content;
-  transition: 0.2s ease; 
- & >* {
-  height: 100%;
- }
+  transition: 0.2s ease;
+  
 }
 
 .header__navigation--buttons {
@@ -28,14 +33,113 @@
   align-items: center;
 }
 
-
 .header__navigation--link:hover {
-    color: $secondaryButtonColor;
-  
+  color: $secondaryButtonColor;
 }
 
-.activeNavLink{
+.activeNavLink {
   color: blue !important;
   text-decoration: underline;
   border-bottom: 2px solid blue;
+}
+
+.header__navigation--basket {
+  transition: background-image 0.2s ease;
+  width: 16px;
+  height: 16px;
+  padding: 15px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./../../ui/components/shopping-basket.png");
+  border-radius: 5px;
+}
+
+.header__navigation--basket:hover {
+  background-image: url("./../../ui/components/shopping-basket-hover.png");
+  border: 1px solid $secondaryButtonColorHover;
+  
+  
+}
+
+.header__navigation--basket:active {
+  background-image: url("./../../ui/components/shopping-basket-pressed.png");
+  border: 1px solid $secondaryButtonColorPressed;
+}
+
+
+.header__navigation--mobile{
+  display: none;
+  transition: background-image 0.2s ease;
+  width: 38px;
+  height: 38px;
+  // padding: px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./../../ui/components/mobileMenu.png");
+
+  border: 1px solid $primaryButtonColorHover;
+  border-radius: 10px;
+  
+}
+.header__navigation--mobile:hover{
+  background-color:$primaryButtonColorHover;
+}
+
+.header__navigation--mobile:active{
+  background-color:$primaryButtonColorPressed;
+  background-image: url('./../../ui/components/mobileMenuPressed.png');
+}
+
+
+@media (max-width: 1199px) {
+.header__navigation{
+  // display: none;
+  position: absolute;
+  top: 0%;
+  right: 0px;
+
+  width: 375px;
+  height: 390px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 3;
+
+  
+  padding: 10px;
+  flex-direction: column;
+  background-color: rgb(140, 231, 115);
+  padding-top: 65px;
+  
+  
+}
+
+.header__navigation--close{
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  transform: translateX(-50%);
+  width: 38px;
+  height: 38px;
+}
+.header__navigation--mobile{
+  display: block;
+}
+
+#arrowDown{
+  display: none;
+}
+}
+
+
+@media (max-width: 599px) {
+  .header__logo{
+    z-index: 5;
+  }
+  #buttonPopup{
+    display: none;
+  }
 }
