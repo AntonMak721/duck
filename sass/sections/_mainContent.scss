@@ -3,6 +3,7 @@
 }
 .main__content {
   position: relative;
+  top: 10%;
   height: 90vh;
 }
 
@@ -27,7 +28,6 @@
 
 .main__img {
   position: absolute;
-  // top: 50%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -41,11 +41,10 @@
 
   width: 120px;
   height: 108px;
-  background-image: url('./../../ui/img/duckSound.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    // background-position: 0;
-    transition: background-image 0.2s ease; 
+  background-image: url("./../../ui/img/duckSound.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s ease;
 }
 .main__subtitle {
   position: absolute;
@@ -84,6 +83,7 @@
   .main__img {
     right: 0%;
     top: 10%;
+    z-index: 0;
   }
   .main__img--duck {
     transform: translateX(95%);
@@ -91,7 +91,6 @@
   .main__img--duckSound {
     transform: translateX(50%);
     left: 70%;
-    // top: 30%;
   }
   .main__subtitle {
     top: 60%;
@@ -100,38 +99,41 @@
 }
 
 @media (max-width: 899px) {
-    .main__title {
-        line-height: 80%;
-        font-size: 92px;
-      }
-      .main__title--many {
-        top: 15%;
-      }
-      .main__title--ducks {
-        top: 25%;
-        left: 2%;
-      }
-      .main__img {
-        right: 0%;
-        top: 10%;
-      }
-      .main__img--duck {
-        transform: translateX(95%);
-      }
-      .main__img--duckSound {
-        transform: translateX(50%);
-        left: 70%;
-        width: 80px;
-        height: 72px;
-        top: 40%;
-      }
-      .main__subtitle {
-        top: 40%;
-        left: 2%;
-      }
+  .main__title {
+    line-height: 80%;
+    font-size: 92px;
+  }
+  .main__title--many {
+    top: 15%;
+  }
+  .main__title--ducks {
+    top: 25%;
+    left: 2%;
+  }
+  .main__img {
+    right: 0%;
+    top: 10%;
+  }
+  .main__img--duck {
+    transform: translateX(95%);
+  }
+  .main__img--duckSound {
+    transform: translateX(50%);
+    left: 70%;
+    width: 80px;
+    height: 72px;
+    top: 40%;
+  }
+  .main__subtitle {
+    top: 40%;
+    left: 2%;
+  }
 }
 
 @media (max-width: 599px) {
+  .main__content {
+    top: 0;
+  }
   .main__title--many {
     top: 10%;
     left: 16px;

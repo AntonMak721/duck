@@ -15,7 +15,7 @@
 <body>
     <header class="header__wrapper" >
         <img class="header__logo" src="./ui/components/Logo.png" alt="logo">
-        <nav class="header__navigation">
+        <nav id="nav" class="header__navigation">
             <img id="mobileMenuClose" class="header__navigation--close" src="./ui/components/close.png" alt="close">
             <a class="header__navigation--link activeNavLink" href="#">Главная</a>
             <a class="header__navigation--link" href="#">Категории</a>
@@ -23,11 +23,12 @@
             <a class="header__navigation--link" href="#">Блог</a>
             <a class="header__navigation--link" href="#">Отзывы</a>
             <a class="header__navigation--link" href="#">Контакты</a>    
+            <button id="buttonPopupNavigation" class="button button__primary">Заказать обратный звонок</button>
         </nav>
         <div class="header__navigation--buttons">
             <div class="header__navigation--basket"></div>
             <button id="buttonPopup" class="button button__primary">Заказать обратный звонок</button>
-            <div class="header__navigation--mobile"></div>
+            <div id="mobileMenuHamburger" class="header__navigation--mobile"></div>
         </div>
     </header>
     <main class="main__wrapper">

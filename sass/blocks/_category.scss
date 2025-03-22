@@ -1,83 +1,75 @@
-
-.category__wrapper{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2%;
+.category__wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2%;
 }
 
-
-.category__list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 44px;
+.category__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
 }
 
-.category__list--item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 17px;
-    
-    p {
-        white-space: nowrap;
+.category__list--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
 
-        font-family: "Inter", sans-serif;
-        line-height: 20px;
-        letter-spacing: 0.5%;
-        font-size: 16px;
-        font-weight: 400;
-    }
+  p {
+    white-space: nowrap;
+
+    font-family: "Inter", sans-serif;
+    line-height: 20px;
+    letter-spacing: 0.5%;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
-.category__list--item:hover{
-    color: $secondaryButtonColorHover;
-    transition: background-image 0.2s ease; 
-    .category__list--img{
-        background-image: url('./../../ui/components/shapeBlue.png');
-    }
+.category__list--item:hover {
+  color: $secondaryButtonColorHover;
+  transition: background-image 0.2s ease;
+  .category__list--img {
+    background-image: url("./../../ui/components/shapeBlue.png");
+  }
 }
 
-.category__list--img{
-    width: 14px;
-    height: 12px;
-    background-image: url('./../../ui/components/shape.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    // background-position: 0;
-    transition: background-image 0.2s ease; 
-    
+.category__list--img {
+  width: 14px;
+  height: 12px;
+  background-image: url("./../../ui/components/shape.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s ease;
 }
-// .category__list--img{
-//     background-image: url('./../../ui/components/shapeBlue.png');
-// }
-
 
 @media (max-width: 1199px) {
-    .category__list{
-        gap: 24px;
-    }
+  .category__list {
+    gap: 24px;
+  }
 }
 
 @media (max-width: 899px) {
-    .category__list{
-        gap: 10px;
-    }
-    .category__list--item{
-        gap:4px;
-    }
+  .category__list {
+    gap: 10px;
+  }
+  .category__list--item {
+    gap: 4px;
+  }
 }
 
 @media (max-width: 599px) {
-    .category__wrapper{
-        left: 16px;
-        transform: translateX(0%);
-        bottom: 2%;
-    }
+  .category__wrapper {
+    left: 16px;
+    transform: translateX(0%);
+    bottom: 2%;
+  }
 
-    .category__list{
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .category__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

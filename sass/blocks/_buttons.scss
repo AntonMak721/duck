@@ -4,7 +4,7 @@
   color: #ffffff;
   border: none !important;
   border-radius: 5px;
-  transition:  0.2s ease; 
+  transition: 0.2s ease;
 
   font-family: "Inter", sans-serif;
   line-height: 100%;
@@ -16,7 +16,7 @@
 .button__primary {
   background-color: $primaryButtonColor;
 
-  &:hover { 
+  &:hover {
     background-color: $primaryButtonColorHover;
   }
   &:active {
