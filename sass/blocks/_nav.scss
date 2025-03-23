@@ -129,10 +129,15 @@
 }
 
 @media (max-width: 599px) {
-  .header__logo {
-    z-index: 5;
-  }
+  
   #buttonPopup {
     display: none;
   }
+}
+
+@media (max-width: 375px) {
+  .header__logo {
+    z-index: 5;
+  }
+  
 }

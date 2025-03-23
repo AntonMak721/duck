@@ -20,7 +20,6 @@ buttonPopupNavigation.addEventListener("click", function () {
   popup.classList.remove("none");
   overlay.classList.add("flex");
   nav.classList.remove("flex");
-  // mainImg.classList.add("zIndex") ;
 });
 
 popupClose.addEventListener("click", function () {
@@ -37,7 +36,6 @@ overlay.addEventListener("click", function (event) {
 
   if (window.innerWidth < 1198) {
     nav.classList.remove("flex");
-    nav.classList.add("none");
   }
 });
 
