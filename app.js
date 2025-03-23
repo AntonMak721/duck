@@ -1,6 +1,6 @@
 const popup = document.getElementById("popup");
 const popupClose = document.getElementById("popupClose");
-const mainImg = document.querySelector(".main__img");
+const mainImg = document.getElementById("mainImg");
 
 const buttonPopup = document.getElementById("buttonPopup");
 const buttonPopupNavigation = document.getElementById("buttonPopupNavigation");
@@ -12,34 +12,41 @@ const mobileMenuClose = document.getElementById("mobileMenuClose");
 
 buttonPopup.addEventListener("click", function () {
   popup.classList.remove("none");
-  overlay.style.display = "flex";
-  mainImg.style.zIndex = 0;
+  overlay.classList.add("flex");
+  mainImg.classList.add("zIndex");
 });
 
 buttonPopupNavigation.addEventListener("click", function () {
   popup.classList.remove("none");
-  overlay.style.display = "flex";
-  nav.style.display = "none";
+  overlay.classList.add("flex");
+  nav.classList.remove("flex");
+  // mainImg.classList.add("zIndex") ;
 });
 
 popupClose.addEventListener("click", function () {
-  popup.classList.toggle("none");
-  overlay.style.display = "none";
+  popup.classList.add("none");
+  overlay.classList.remove("flex");
+  mainImg.classList.remove("zIndex");
 });
 overlay.addEventListener("click", function (event) {
   if (event.target === overlay) {
-    overlay.style.display = "none";
+    overlay.classList.remove("flex");
   }
   popup.classList.add("none");
-  nav.style.display = "none";
+  mainImg.classList.remove("zIndex");
+
+  if (window.innerWidth < 1198) {
+    nav.classList.remove("flex");
+    nav.classList.add("none");
+  }
 });
 
 mobMenu.addEventListener("click", function () {
-  nav.style.display = "flex";
-  overlay.style.display = "flex";
+  nav.classList.add("flex");
+  overlay.classList.add("flex");
 });
 
 mobileMenuClose.addEventListener("click", function () {
-  nav.style.display = "none";
-  overlay.style.display = "none";
+  nav.classList.remove("flex");
+  overlay.classList.remove("flex");
 });

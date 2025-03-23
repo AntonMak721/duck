@@ -165,3 +165,10 @@ input[type="submit"] {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
+
+.flex{
+  display: flex !important;
+}
+.zIndex{
+  z-index: -1 !important;
+}

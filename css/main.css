@@ -172,6 +172,15 @@ input[type="submit"] {
   -webkit-appearance: none;
 }
 
+.flex {
+  display: -webkit-box !important;
+  display: flex !important;
+}
+
+.zIndex {
+  z-index: -1 !important;
+}
+
 .header__wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -471,6 +480,10 @@ input[type="submit"] {
   background-image: url("./../../ui/components/mobileMenuPressed.png");
 }
 
+.header__navigation--close {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .header__navigation {
     display: none;
@@ -496,6 +509,7 @@ input[type="submit"] {
   }
 
   .header__navigation--close {
+    display: block;
     cursor: pointer;
     padding: 10px;
     position: absolute;
